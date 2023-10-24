@@ -3,6 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #ececec;
+    overflow-x: hidden;
 }
 
 #here:focus {
@@ -76,6 +77,7 @@ button {
     width: fit-content;
 }
 
+
 .fit {
     -webkit-text-stroke-width: 0.2vw;
     -webkit-text-stroke-color: black;
@@ -96,6 +98,7 @@ button {
     line-height: 3rem;
 
 }
+
 
 @media screen and (max-width: 768px) {
     .bg {
