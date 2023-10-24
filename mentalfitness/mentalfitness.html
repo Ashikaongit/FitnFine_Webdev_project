@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Fit N Fine</a>
+                <a class="navbar-brand" aria-label="Fit N Fine homepage" href="#">Fit N Fine</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links"
                     aria-controls="links" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="links">
                     <ul class="navbar-nav ms-auto me-3">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                            <a class="nav-link " href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="fitnesslinks" role="button"
@@ -38,8 +38,8 @@
                                 Fitness
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="fitnesslinks">
-                                <li><a class="dropdown-item" href="#">Physical</a></li>
-                                <li><a class="dropdown-item" href="#">Mental</a></li>
+                                <li><a class="dropdown-item" href="\physicalfitness/physicalfitness.html">Physical</a></li>
+                                <li><a class="dropdown-item" aria-current="page" href="#">Mental</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -62,6 +62,9 @@
             </div>
         </nav>
     </header>
+
+    <p style="font-size: x-small; margin-left: 5rem;" class="fst-italic"> <u><a href="#content"
+        style="text-decoration: none; color:grey;">Skip to content</a> </u></p>
 
     <h2 class="mental">
         MENTAL
@@ -104,7 +107,7 @@
 
 
 
-    <div class="vert d-none d-lg-inline-block position-absolute">
+    <div class="vert d-none d-lg-inline-block position-absolute" >
         <span class="stay">STAY</span>
         <span class="fit">FIT</span>
         <span class="n">N</span>
@@ -116,7 +119,7 @@
         <h2>What can you do?</h2>
     </div>
 
-    <div class="container-sm data">
+    <div class="container-sm data" id="content">
 
 
         <div class="row">
@@ -259,7 +262,8 @@
             <div class="col-lg-6 p-4">
                 <div
                     class="container text-bg-light border border-dark rounded-3 p-4 d-flex flex-column align-items-center justify-content-center h-100 ">
-                    <img src="images/anger.jpg" class="img-fluid rounded-3" width="500px" alt="Image of a person in anger">
+                    <img src="images/anger.jpg" class="img-fluid rounded-3" width="500px"
+                        alt="Image of a person in anger">
 
                     <hr>
                     <h2>Anger Management</h2>
@@ -346,10 +350,10 @@
                     <h4 class="text-dark">Follow Us</h4>
                     <p class="text-muted">Let us be social</p>
                     <div class="column text-dark">
-                        <i class="bi bi-facebook mx-1"></i>
-                        <i class="bi bi-instagram mx-1"></i>
-                        <i class="bi bi-twitter-x mx-1"></i>
-                        <i class="bi bi-youtube mx-1"></i>
+                        <a href="#" aria-label="facebook" class="text-dark"><i class="bi bi-facebook mx-1"></i></a>
+                        <a href="#" aria-label="instagram" class="text-dark"><i class="bi bi-instagram mx-1"></i></a>
+                        <a href="#" aria-label="twitter" class="text-dark"><i class="bi bi-twitter-x mx-1"></i></a>
+                        <a href="#" aria-label="youtube" class="text-dark"> <i class="bi bi-youtube mx-1"></i></a>
                     </div>
                 </div>
             </div>
