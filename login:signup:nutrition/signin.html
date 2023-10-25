@@ -69,26 +69,26 @@
         </nav>
     </header>
 
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="d-md-flex border rounded-5 p-3 bg-white shadow box-area col-12 col-lg-8">
-            <div
-                class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column bg-primary left-box">
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column bg-primary left-box">
                 <p class="text-white fs-2 fw-bold my-4">FitNFine</p>
-                <p class="text-white text-center mb-4" style="width: 80%;">Your one-stop destination for all your
-                    fitness needs.</p>
+                <p class="text-white text-center mb-4" style="width: 80%;">Your one-stop destination for all your fitness needs.</p>
             </div>
             <div class="col-md-6 right-box p-4">
                 <form action="">
                     <div class="mb-4">
-                        <h2 class="text-primary fs-4 fw-medium mb-0">Hello, Again!</h2>
+                        <h2 class="text-primary fs-4 fw-medium mb-0" id="login-heading">Hello, Again!</h2>
                         <p class="text-secondary fs-6 fw-normal mb-0">We are happy to have you back!</p>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control form-control-lg" placeholder="Email address" required
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" id="email" class="form-control form-control-lg" placeholder="Email address" required
                             aria-required="true" aria-label="Email address" title="Please enter a valid email address">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form-control form-control-lg" placeholder="Password" required
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-control form-control-lg" placeholder="Password" required
                             aria-required="true" aria-label="Password">
                     </div>
                     <div class="mb-4 d-flex justify-content-between">
@@ -104,21 +104,20 @@
                         <button type="submit" class="btn btn-primary btn-lg w-100">Login</button>
                     </div>
                     <div class="mb-3">
-                        <button class="btn btn-light btn-lg w-100">
+                        <button class="btn btn-light btn-lg w-100" id="google-signin">
                             Sign In with Google
                         </button>
                     </div>
                     <div class="row">
                         <small>
                             Don't have an account?
-                            <a class="text-primary text-decoration-none" href="signup.html">Sign Up</a>
+                            <a class="text-primary text-decoration-none" href="signup1.html">Sign Up</a>
                         </small>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
