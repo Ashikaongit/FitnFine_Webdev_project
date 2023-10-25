@@ -7,16 +7,18 @@ header,
 section {
   overflow-x: hidden;
 }
-
+/* Creating Variables*/
 :root {
   --Sniglet-font: "Sniglet", cursive;
   --Rubik: "Rubik", cursive;
   --Patua: "Patua One", cursive;
-  --Lobster: "lobster", cursive;
   --light-black: #2e2c2caf;
   --light-gray: rgba(255, 255, 255, 0.877);
 }
+a{color:#ff9800;
+  text-decoration: none;
 
+}
 header a {
   font-family: var(--Sniglet-font);
   font-size: 0.9em;
@@ -108,7 +110,7 @@ header .row .col-md-5 img {
 }
 
 header {
-  background: #ff512f;
+  background: #2196f3;
   /* fallback for old browsers */
   background: var(--bggradient);
 }
@@ -143,13 +145,6 @@ header .container .col-md-7 p {
   padding: 20vmin 0vmin;
   background-color: white;
 }
-
-.section-1 .row .col-md-6 .pray img {
-  opacity: 0.8;
-  width: 80%;
-  border-radius: 0.2em;
-}
-
 .section-1 .row .col-md-6:last-child {
   position: relative;
 }
@@ -183,6 +178,7 @@ header .container .col-md-7 p {
 .cover {
   width: 100%;
   height: 55vmin;
+  color:black;
   background: url("../assets/pexels-photo-452738.jpeg");
   background-position: -24rem -19rem;
   background-size: 150%;
@@ -201,20 +197,20 @@ header .container .col-md-7 p {
 .cover .content {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(89, 176, 246,0.75);
   padding-top: 19vmin;
 }
 
 .cover .content > h1 {
   font-family: var(--Patua);
   font-size: 6vmin;
-  color: whitesmoke;
+  color: black;
 }
 
 .cover .content > p {
   font-family: var(--Rubik);
-  font-size: 2vmin;
-  color: #e5e5e5;
+  font-size: 2.5vmin;
+  color: var(--light-black);
 }
 
 .numbers .rect {
@@ -226,7 +222,7 @@ header .container .col-md-7 p {
   padding-top: 3.5vmin;
   margin: 1rem;
   border-radius: 0.5em;
-  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.20);
 }
 
 .numbers {
@@ -234,23 +230,25 @@ header .container .col-md-7 p {
 }
 
 .numbers .rect h1 {
-  font-size: 5rem;
-  color: tomato;
+  font-size: 4rem;
+  color: #ff9800;
 }
 
 .numbers .rect > p {
   font-family: var(--Patua);
 }
 
+/*Blog Section Starts Here*/
+
 .purchase > h1 {
   padding-top: 15vmin;
   padding-bottom: 0.1em;
-  font-family: var(--Lobster);
+  font-family: var(--Patua);
 }
 
 .purchase > p {
   color: var(--light-black);
-  font-size: 3vmin;
+  font-size: 2.8vmin;
   padding-bottom: 10vmin;
 }
 
@@ -307,22 +305,6 @@ header .container .col-md-7 p {
   font-size: 3vmin;
 }
 
-.section-3 .desktop {
-  background: white;
-  display: inline-block;
-  border-radius: 3em;
-  padding: 2vmin 4.5vmin;
-  margin: 1em;
-}
-
-.section-3 .desktop h3 {
-  font-size: 4vmin;
-}
-
-.section-3 .desktop p {
-  font-size: 2vmin;
-}
-
 /* Section Team */
 
 .section-4 .container h1 {
@@ -356,7 +338,7 @@ header .container .col-md-7 p {
   width: 60%;
 }
 
-footer {
+/* footer {
   background:rgba(33, 150, 243, 0.40);
   overflow-x: hidden;
   padding: 14vmin 18vmin;
@@ -380,8 +362,8 @@ footer .input-group .input-group-text {
 }
 
 footer .column i {
-  color: #dd2476;
-}
+  color: #dd2476; */
+/* } */
 
 /* It is Adjacent sibling combinator */
 
@@ -397,3 +379,13 @@ footer .column i + i {
   z-index: 9999;
   transition: all 1.5s ease;
 }
+/*Contact Page Css*/
+.contact-section {
+  background-color: #f0f0f0;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #000;
+}
+
